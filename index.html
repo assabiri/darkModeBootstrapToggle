@@ -8,8 +8,33 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Mini-Project Starter</title>
   </head>
-  <body class="p-2">
+  <body class="m-4">
     <h1>Mini-Project Starter</h1>
+    <button class="btn btn-dark" data-bs-theme-value="dark">
+      Enable Dark Mode
+    </button>
+    <button class="btn btn-light" data-bs-theme-value="light">
+      Enable Light Mode
+    </button>
+    <div class="dropdown m-2">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButtonLight"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Responsive color dropdown
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item active" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
     <div class="dropdown m-2" data-bs-theme="light">
       <button
         class="btn btn-secondary dropdown-toggle"
@@ -18,7 +43,7 @@
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        Default dropdown
+        Light dropdown
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
         <li><a class="dropdown-item active" href="#">Action</a></li>
@@ -58,12 +83,6 @@
         praesentium impedit, sunt nobis?
       </div>
     </div>
-    <button class="btn btn-dark m-2" data-bs-theme-value="dark">
-      Enable Dark Mode
-    </button>
-    <button class="btn btn-light m-2" data-bs-theme-value="light">
-      Enable Light Mode
-    </button>
 
     <script src="js/darkModeToggle.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
